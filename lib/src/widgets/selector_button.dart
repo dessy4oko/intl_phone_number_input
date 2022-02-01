@@ -158,6 +158,7 @@ class SelectorButton extends StatelessWidget {
             onTap: () => Navigator.pop(context),
           ),
           DraggableScrollableSheet(
+            initialChildSize: .8,
             builder: (BuildContext context, ScrollController controller) {
               return Directionality(
                 textDirection: Directionality.of(inheritedContext),
